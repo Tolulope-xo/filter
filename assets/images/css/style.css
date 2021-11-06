@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  color: cornsilk;
+}
+
+.container {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../image/splash.jpg);
+  background-size: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top: 1px;
+  margin: 1px auto;
+  width: 900px;
+  height: 600px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:first-child {
+  font-size: 25px;
+  font-weight: bolder;
+
+  margin-right: auto;
+}
+
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5),
+nav ul li:nth-child(6),
+nav ul li:nth-child(7) {
+  font-size: 15px;
+  margin: 0 25px;
+  font-weight: 200;
+}
+
+/* The main bar */
+
+.container > main {
+}
+
+.container > main > p {
+  text-transform: uppercase;
+  font-size: 8px;
+  color: #b38d54;
+  font-stretch: extra-condensed;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  letter-spacing: 8px;
+}
+
+.container > main > h1 {
+  line-break: loose;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.container > main > form {
+  background-color: #ecae51;
+  border-radius: 20px;
+  border: none solid;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.container > main > form > svg {
+  width: 20px;
+}
+
+footer {
+}
+
+footer > div > img {
+  display: block;
+  max-width: 70%;
+  margin-bottom: 15px;
+  border: 4px;
+  border-radius: 5px solid none;
+  margin: 0 auto;
+}
+
+footer,
+footer > div {
+  display: grid;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  line-break: normal;
+  justify-content: space-evenly;
+  padding: 10px;
+  text-align: justify;
+}
+
+footer > div:first-of-type {
+  flex-direction: column;
+}
+footer > div:nth-child(2) {
+  display: block;
+}
